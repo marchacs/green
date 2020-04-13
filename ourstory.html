@@ -16,17 +16,25 @@
 	<body>
 
 	<!-- INSERT HTML PAGE CONTENT HERE -->
-    <nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <!-- This is the main nav that will be on every page. Blog posts should be a dropdown.-->
-
-            <a href="index.html"> Home</a>
-            <a href="ourstory.html"> Our Story </a>
-            <a href="blogpost.html"> Blog Posts</a>
-            <a href="reviews.html"> Reviews and Recomendations</a>
-            <a href="Shop.html"> Shop </a>
-
-    </nav>
-
+            <ul class="navbar-nav mr-auto">
+           <li><a href="index.html"> Home</a></li>
+           <li><a href="ourstory.html"> Our Story </a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Blog Posts
+        </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="water.html">Conserve Water</a>
+          <a class="dropdown-item" href="energy.html">Conserve Energy</a>
+          <a class="dropdown-item" href="reducewaste.html">Reduce Waste</a>
+          <a class="dropdown-item" href="toxins.html">Reduce Toxins</a>
+        </div>
+                </li>
+            <li><a href="reviews.html"> Reviews and Recomendations</a></li>
+            <li><a href="Shop.html"> Shop </a></li>
+             </ul>
+        </nav>
 		<!-- jQuery and Bootstrap links - do not delete! -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
