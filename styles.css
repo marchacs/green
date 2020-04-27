@@ -1,2 +1,10 @@
 h1,h2,h3{font-family: 'Pacifico', cursive;}
 p,ul,li, a{font-family: 'Montserrat', sans-serif;}
+body{background-color: #E8FCFF
+}
+.navbar{background-color: #E8FCFF }
+
+.family{border: solid;
+        border-width 75px;
+        border-color: white;
+}
