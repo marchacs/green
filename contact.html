@@ -18,7 +18,7 @@
 	<body>
 
 	<!-- INSERT HTML PAGE CONTENT HERE -->
-      <header>  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <header>  <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
            <img src="images/greenily.png" width="20%" >
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,9 +26,9 @@
         <!-- This is the main nav that will be on every page. Blog posts should be a dropdown.-->
            <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-           <li class="nav-item active px-md-5"><a href="index.html" class="text-success" > Home</a></li>
-           <li class="nav-item active px-md-5"><a href="ourstory.html" class="text-success"> Our Story </a></li>
-            <li class="nav-item dropdown px-md-5 "><a class="nav-link dropdown-toggle text-success" href="#"id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog Posts </a>
+           <li class="nav-item active px-md-5 pt-md-2"><a href="index.html" class="text-success" > Home</a></li>
+           <li class="nav-item active px-md-5 pt-md-2"><a href="ourstory.html" class="text-success"> Our Story </a></li>
+            <li class="nav-item dropdown px-md-5 pt-md-1"><a class="nav-link dropdown-toggle text-success" href="#"id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog Posts </a>
                  <div class="dropdown-menu text-success" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item text-success" href="water.html">Conserve Water</a>
                   <a class="dropdown-item text-success" href="energy.html">Conserve Energy</a>
@@ -36,13 +36,91 @@
                   <a class="dropdown-item text-success" href="toxins.html">Reduce Toxins</a>
                 </div>
             </li>
-            <li class="nav-item active px-md-5 "><a href="reviews.html" class="nav-item text-success" > Reviews and Recomendations</a></li>
-            <li class="nav-item active px-md-5 "><a href="Shop.html" class="nav-item text-success"> Shop </a></li>
+            <li class="nav-item active px-md-5 pt-md-2"><a href="reviews.html" class="nav-item text-success" > Reviews</a></li>
+            <li class="nav-item active px-md-5 pt-md-2"><a href="contact.html" class="nav-item text-success"> Contact </a>
+            </li>
              </ul>
                </div>
-        </nav> </header>
-<h1> Contact </h1>
-        <h2> Enter your name and email to join my mailing list. Feel free to also leave any questions or comments you may have for me below.</h2>
+        </nav>
+        <h1 class="text-center py-sm-5 text-dark"> Contact </h1>
+        </header>
+
+<section class="Contianer">
+
+    <blockquote class="blockquote container">
+        <h4 class="text-success text-center"> Enter your name and email to join my mailing list. Feel free to also leave any questions or comments you may have for me below.</h4>
+        </blockquote>
+        <div class="row">
+
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5 container">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                <!--Grid row-->
+                <div class=" container row">
+
+                    <!--Grid column-->
+                    <div class=" conatiner col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" id="name" name="name" class="form-control">
+                            <label for="name" class="">Your name</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class=" col-md-6">
+                        <div class=" md-form mb-0">
+                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="email" class="">Your email</label>
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class=" container row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject" class="form-control">
+                            <label for="subject" class="">Subject</label>
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="container row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Your message</label>
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary bg-success border-white" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+
+
+    </div>
+
+</section>
 		<!-- jQuery and Bootstrap links - do not delete! -->
 		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
